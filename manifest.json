@@ -1,0 +1,30 @@
+{
+    "manifest_version":2,
+    "name":"my-plugin",
+    "version":"0.0.1",
+    "description":"这是一个小小的开发插件的实践",
+    "icons":{
+        "84":"./icon/plugin.jpg"
+    },
+    "browser_action":{
+        "default_icon":"./icon/plugin.jpg",
+        "default_title":"我的插件",
+        "default_popup":"./html/popup.html"
+    },
+    "background":{
+        "scripts":["./js/background.js"],
+        "persistent":false
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["./js/content.js"],
+            "run_at":"document_start"
+        },
+        {
+            "matches":["https://www.baidu.com/"],
+            "js":["./js/other.js"],
+            "run_at":"document_start"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+console.log("hello man ,this is other.js")
