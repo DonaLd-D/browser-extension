@@ -5,4 +5,4 @@
 - 在url或者dom满足设置的约束条件时就会加载相应的脚本
 
 ## 官方文档
-- [chrome插件](https://developer.chrome.com/docs/extensions/)
+- [chrome插件官方文档](https://developer.chrome.com/docs/extensions/)
